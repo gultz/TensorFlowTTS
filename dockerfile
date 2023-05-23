@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y zsh tmux wget git libsndfile1
 RUN python -m pip install --upgrade pip
 RUN pip install ipython && \
-    pip install git+https://github.com/TensorSpeech/TensorflowTTS.git && \
+    pip install git+https://github.com/gultz/TensorFlowTTS.git && \
     pip install git+https://github.com/repodiac/german_transliterate.git#egg=german_transliterate
 RUN mkdir /workspace
 WORKDIR /workspace
